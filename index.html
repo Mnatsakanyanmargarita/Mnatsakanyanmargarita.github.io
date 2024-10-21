@@ -4,35 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margarita's Service Learning E-Portfolio</title>
-    <style>
-        /* [Previous CSS styles remain the same] */
-        
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .evaluation-card {
-            background: #f8f9fa;
-            border-left: 4px solid var(--secondary-color);
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-
-        .rating {
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -59,13 +31,17 @@
 
         <section id="reflections">
             <h2>Reflections</h2>
+            <h3>Growth and Learning</h3>
+            <p>Working at Mark's Adventures Day Care has been a transformative experience that has helped me develop both personally and professionally. I've learned to adapt my communication style to effectively engage with young children and create an environment that fosters creativity and learning.</p>
+            
             <h3>Daily Activities and Impact</h3>
             <p>Throughout my service, I engaged in various creative activities with the children, including:</p>
-            <ul>
-                <li>Art projects (seasonal crafts like Halloween pumpkin drawings)</li>
+            <ul class="achievement-list">
+                <li>Seasonal art projects (Halloween pumpkin drawings, handprint crafts)</li>
                 <li>Creative expression through drawing and coloring</li>
                 <li>Interactive group activities promoting social skills</li>
                 <li>Supporting individual creative development</li>
+                <li>Organizing and facilitating group art sessions</li>
             </ul>
         </section>
 
@@ -74,19 +50,27 @@
             <p>Below are examples of activities and projects I facilitated with the children:</p>
             
             <div class="gallery">
-                <div>
+                <div class="gallery-item">
                     <img src="/api/placeholder/400/300" alt="Children showing their handprint art project" />
-                    <p>Facilitating creative group activities with seasonal themes</p>
+                    <div class="gallery-caption">Facilitating creative group activities with seasonal themes</div>
                 </div>
-                <div>
+                <div class="gallery-item">
                     <img src="/api/placeholder/400/300" alt="Child proudly displaying pumpkin drawing" />
-                    <p>Supporting individual artistic expression through Halloween-themed activities</p>
+                    <div class="gallery-caption">Supporting individual artistic expression through Halloween-themed activities</div>
                 </div>
-                <div>
+                <div class="gallery-item">
                     <img src="/api/placeholder/400/300" alt="Child showing cat drawing" />
-                    <p>Encouraging creative drawing and artistic development</p>
+                    <div class="gallery-caption">Encouraging creative drawing and artistic development</div>
                 </div>
             </div>
+
+            <h3>Key Achievements</h3>
+            <ul class="achievement-list">
+                <li>Successfully implemented seasonal art projects that enhanced children's creativity</li>
+                <li>Developed and led interactive group activities that improved social skills</li>
+                <li>Created a supportive environment for individual artistic expression</li>
+                <li>Maintained consistent engagement with all children in the program</li>
+            </ul>
         </section>
 
         <section id="evaluation">
@@ -99,19 +83,22 @@
                 <p><strong>Professionalism and Ethical Conduct:</strong> <span class="rating">Excellent</span></p>
                 
                 <h3>Supervisor Comments</h3>
-                <p class="quote">"Margarita has demonstrated great responsibility and attention to detail in her work. She manages tasks efficiently and is always proactive in helping. Her positive attitude and willingness to assist make her a wonderful volunteer."</p>
-                <p>- Gayane Saroyan, CEO</p>
+                <div class="quote">
+                    <p>"Margarita has demonstrated great responsibility and attention to detail in her work. She manages tasks efficiently and is always proactive in helping. Her positive attitude and willingness to assist make her a wonderful volunteer."</p>
+                    <p>- Gayane Saroyan, CEO</p>
+                </div>
             </div>
         </section>
 
         <section id="future">
             <h2>Future Plans</h2>
             <p>This service-learning experience has strengthened my commitment to early childhood education. Moving forward, I plan to:</p>
-            <ul>
-                <li>Continue developing creative activities for young learners</li>
+            <ul class="achievement-list">
+                <li>Continue developing innovative creative activities for young learners</li>
                 <li>Pursue further education in early childhood development</li>
                 <li>Implement more interactive learning techniques</li>
                 <li>Share my experiences and methods with other educators</li>
+                <li>Maintain connections with Mark's Adventures Day Care for future collaboration</li>
             </ul>
         </section>
     </main>
